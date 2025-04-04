@@ -13,22 +13,26 @@ export default overview_page = `
                  </div>
                  
                  <div class="div_profile_bottom">
-                 <h2>Lorem ipsum dolor sit.</h2>
+                 <h2>Nombre</h2>
                  <p>ID:<span id="span_overview_code">1234</span></p>
                  <div>
+                 
                  <span class="material-symbols-outlined">mail</span>Email:<p><p id="span_overview_email">youremail@gmail.com<></p> 
                 </div>
                 <div>
-                     <span>github:</span>
-                     <a href="" target="_blank">Profile </a>
-                     <span class="material-symbols-outlined">open_in_new</span>
+                    <span class="material-symbols-outlined">phone</span>Telefono: <p><p id="span_overview_phone"></p> 
                 </div>
-            </div>
-            </div> 
-            <div class="div_profile_bottom">
-                  <h5>About</h5>
-                 <p id="p_description_overview"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-            </div>
+                <div>
+                    <span class="material-symbols-outlined">today</span>Fecha de Nacimiento: <p><p id="span_overview_datebn"></p> 
+                </div>
+                 <div>
+                    <span class="material-symbols-outlined">location_on</span>Dirección: <p><p id="span_overview_direccion"></p> 
+                </div>
+                
+                </div>
+                
+               
+             </div>
                  <button id="btn_edit_overview" class="button"><span class="material-symbols-outlined">edit</span>Edit Profile</button>
         </div>
         <div class="div_technologies"> 

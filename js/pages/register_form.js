@@ -15,7 +15,7 @@ export default register_form = `<div class="registerContainer" id="register">
                     <input id="new_student_email" type="email" placeholder="jesusperez@gmail.com">
                 </div>
                 <div class="div_right">
-                    <label for="new_student_githubLink">GitHub Link</label>
+                    <label for="new_student_githubLink">Fecha Nacimiento</label>
                     <input id="new_student_githubLink" type="text" placeholder="https://github.com/jesusperez">
                     <label for="new_student_photo">Photo URL</label>
                     <input id="new_student_photo" type="text" placeholder="https://photo.com/jesusperez.jpg">

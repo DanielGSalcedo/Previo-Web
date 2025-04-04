@@ -194,11 +194,13 @@ async function overview(code) {
     let student = await api.getStudent(code);
     pageoverview.style.display = 'flex';
     pageoverview.querySelector('#img_perfil_overview').src = student.photo == null ? 'https://th.bing.com/th/id/OIP.-Zanaodp4hv0ry2WpuuPfgHaEf?rs=1&pid=ImgDetMain' : student.photo;
-    pageoverview.querySelector('h2').innerText = student.name;
-    pageoverview.querySelector('#span_overview_code').innerText = student.code;
+    pageoverview.querySelector('h2').innerText = student.nombre;
+    pageoverview.querySelector('#span_overview_code').innerText = student.codigo;
     pageoverview.querySelector('#span_overview_email').innerText = student.email;
+    pageoverview.querySelector('#span_overview_phone').innerText = student.telefono;
+    pageoverview.querySelector('#span_overview_datebn').innerText = student.fecha_nacimiento;
+    pageoverview.querySelector('#span_overview_direccion').innerText = student.direccion;
     pageoverview.querySelector('a').href = student.github_link;
-    pageoverview.querySelector('#p_description_overview').innerText = student.description;
     pageoverview.querySelector('#btn_edit_overview').addEventListener('click', async function(){
         pageoverview.style.display = 'none';
         await edit_form(code);

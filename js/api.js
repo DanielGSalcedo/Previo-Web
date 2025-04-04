@@ -84,7 +84,7 @@ const api = {
     },
     async getStudent(code){
         try {
-            const response = await fetch(`${API_URL}/student?code=eq.${code}&select=*`, {
+            const response = await fetch(`${API_URL}/rest/v1/alumno?codigo=eq.${code}&select=*`, {
                 headers: this.headers
             });
 
