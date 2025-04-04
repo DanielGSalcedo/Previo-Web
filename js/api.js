@@ -50,7 +50,7 @@ const api = {
 
     async updateStudent(code, student) {
         try {
-            const response = await fetch(`${API_URL}/student?code=eq.${code}`, {
+            const response = await fetch(`${API_URL}/rest/v1/alumno?codigo=eq${code}`, {
                 method: 'PATCH',
                 headers: this.headers,
                 body: JSON.stringify(student)
