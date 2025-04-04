@@ -16,11 +16,11 @@ export default register_form = `<div class="registerContainer" id="register">
                 </div>
                 <div class="div_right">
                     <label for="new_student_githubLink">Fecha Nacimiento</label>
-                    <input id="new_student_githubLink" type="date" placeholder="2005-04-27">
+                    <input id="new_student_githubLink" type="date"  placeholder="2005-04-27">
                      <label for="new_student_direccion"> Direccion</label>
                      <input id="new_student_direccion" type="text" placeholder="https://photo.com/jesusperez.jpg">
-                    <label for="new_student_photo">Telefono</label>
-                    <input id="new_student_photo" type="text" placeholder="123456789">
+                    <label for="new_student_phone">Telefono</label>
+                    <input id="new_student_phone" type="text" placeholder="123456789">
                 </div>  
             </div>
             <div class="div_button_register">

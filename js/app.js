@@ -63,31 +63,36 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     registerBtn.addEventListener('click', async () => {
-        const name = document.getElementById('new_student_name').value;
-        const code = document.getElementById('new_student_code').value;
+        const nombre = document.getElementById('new_student_name').value;
+        const codigo = document.getElementById('new_student_code').value;
         const inputcode = document.getElementById('new_student_code');
         const email = document.getElementById('new_student_email').value;
 
-        const github_link = document.getElementById('new_student_githubLink').value;
-        const photo = document.getElementById('new_student_photo').value;
-        const description = document.getElementById('new_student_description').value;
+        const fecha_nacimiento = document.getElementById('new_student_githubLink').value;
+        const direccion = document.getElementById('new_student_direccion').value;
+        const telefono = document.getElementById('new_student_phone').value;
 
-        if (!code) {
+        if (!codigo) {
             alert('Please enter a code');
             return;
         }
 
-        if (!name) {
+        if (!nombre) {
+            alert('Please enter a name');
+            return;
+        }
+        if (!fecha_nacimiento) {
             alert('Please enter a name');
             return;
         }
         const newStudent = {
-            name,
-            code,
+            nombre,
+            codigo,
             email,
-            github_link,
-            photo,
-            description
+            fecha_nacimiento,
+            direccion,
+            telefono
+
         }
         if (inputcode.disabled){
 
@@ -168,7 +173,7 @@ function register_form(){
     containerRegister.querySelector('#new_student_name').value = '';
     containerRegister.querySelector('#new_student_email').value = '';
     containerRegister.querySelector('#new_student_githubLink').value = '';
-    containerRegister.querySelector('#new_student_photo').value = '';
+    containerRegister.querySelector('#new_student_phone').value = '';
     containerRegister.querySelector('#new_student_code').value = '';
 }
 async function edit_form(code) {
