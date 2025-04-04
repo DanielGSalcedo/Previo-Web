@@ -175,6 +175,7 @@ function register_form(){
     containerRegister.querySelector('#new_student_githubLink').value = '';
     containerRegister.querySelector('#new_student_phone').value = '';
     containerRegister.querySelector('#new_student_code').value = '';
+    containerRegister.querySelector('#new_student_direccion').value = '';
 }
 async function edit_form(code) {
     const student = await api.getStudent(code)
@@ -184,11 +185,12 @@ async function edit_form(code) {
         showRegisterForm();
         containerRegister.querySelector('h2').innerText = 'Edit Student';
         containerRegister.querySelector('#bnt_register').value = 'Save';
-        containerRegister.querySelector('#new_student_name').value = student.name;
+        containerRegister.querySelector('#new_student_name').value = student.nombre;
         containerRegister.querySelector('#new_student_email').value = student.email;
-        containerRegister.querySelector('#new_student_githubLink').value = student.github_link;
-        containerRegister.querySelector('#new_student_photo').value = student.photo;
-        inputCode.value = student.code;
+        containerRegister.querySelector('#new_student_githubLink').value = student.fecha_nacimiento;
+        containerRegister.querySelector('#new_student_photo').value = student.telefono;
+        containerRegister.querySelector('#new_student_direccion').value = student.direccion;
+        inputCode.value = student.codigo;
         inputCode.disabled = true;
     }
 
