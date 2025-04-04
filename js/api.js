@@ -31,7 +31,7 @@ const api = {
 
     async createNewStudent(student) {
         try {
-            const response = await fetch(`${API_URL}/student`, {
+            const response = await fetch(`${API_URL}/rest/v1/alumno`, {
                 method: 'POST',
                 headers: this.headers,
                 body: JSON.stringify(student)
